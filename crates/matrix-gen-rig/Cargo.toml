@@ -1,0 +1,14 @@
+[package]
+name = "matrix-gen-rig"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "rig-core adapter for the matrix-gen Oracle and Embedder traits"
+
+[dependencies]
+matrix-gen-core = { path = "../matrix-gen-core" }
+rig-core = "0.33"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
