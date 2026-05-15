@@ -7,6 +7,7 @@ repository.workspace = true
 description = "Multi-agent social simulator core for synthesizing diverse instruction data"
 
 [dependencies]
+rand = "0.10.1"
 serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1.0.149"
 thiserror = "2.0.18"

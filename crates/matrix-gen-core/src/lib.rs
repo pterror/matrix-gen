@@ -4,6 +4,8 @@
 
 pub mod action;
 pub mod agent;
+pub mod cluster;
+pub mod embedding;
 pub mod memory;
 pub mod message;
 pub mod modulator;
@@ -15,6 +17,8 @@ pub mod simulation;
 
 pub use action::Action;
 pub use agent::{Agent, AgentId, ClusterId};
+pub use cluster::cluster_agents;
+pub use embedding::{EmbedError, Embedder, HashEmbedder};
 pub use memory::{Memory, MemoryEntry, MemorySource};
 pub use message::Message;
 pub use modulator::{BroadcastModulator, DropSelfModulator, Modulator};
