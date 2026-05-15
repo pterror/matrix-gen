@@ -1,5 +1,5 @@
 use crate::action::Action;
-use crate::agent::{Agent, AgentId};
+use crate::agent::{Agent, AgentId, ClusterId};
 use crate::memory::{MemoryEntry, MemorySource, Tick};
 use crate::message::Message;
 use crate::modulator::Modulator;
@@ -73,14 +73,18 @@ impl<O: Oracle, M: Modulator> Simulation<O, M> {
 
             self.scenario.record(msg.clone());
 
-            let candidates: Vec<AgentId> = self
+            let sender_cluster = self.agents[actor_idx].cluster;
+            let candidates: Vec<(AgentId, Option<ClusterId>)> = self
                 .agents
                 .iter()
-                .map(|a| a.id)
-                .filter(|&id| id != actor_id)
+                .filter(|a| a.id != actor_id)
+                .map(|a| (a.id, a.cluster))
                 .collect();
 
-            let recipients = self.modulator.route(&msg, &candidates).await;
+            let recipients = self
+                .modulator
+                .route(&msg, sender_cluster, &candidates)
+                .await;
 
             for recipient_id in recipients {
                 if let Some(agent) = self.agents.iter_mut().find(|a| a.id == recipient_id) {

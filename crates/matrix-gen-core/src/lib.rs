@@ -21,7 +21,7 @@ pub use cluster::cluster_agents;
 pub use embedding::{EmbedError, Embedder, HashEmbedder};
 pub use memory::{Memory, MemoryEntry, MemorySource};
 pub use message::Message;
-pub use modulator::{BroadcastModulator, DropSelfModulator, Modulator};
+pub use modulator::{BroadcastModulator, DropSelfModulator, Modulator, OracleModulator};
 pub use oracle::{EchoOracle, Oracle, OracleError, OracleRequest, ScriptedOracle};
 pub use profile::{Goal, PlanStep, Profile};
 pub use prompt::build_actor_request;
