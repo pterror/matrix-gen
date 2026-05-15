@@ -1,0 +1,9 @@
+[
+  "{\"type\": \"speak\", \"content\": \"Looking for a fern illustrator if anyone has a lead.\"}",
+  "{\"type\": \"speak\", \"content\": \"I do mostly metal but I can sketch — happy to try.\"}",
+  "{\"type\": \"speak\", \"content\": \"I can share herbarium photos to work from.\"}",
+  "{\"type\": \"advance_plan\", \"step\": 2, \"content\": \"Tentatively lined up an illustrator.\"}",
+  "{\"type\": \"speak\", \"content\": \"What counties are you covering for collection?\"}",
+  "{\"type\": \"react\", \"to\": 1, \"content\": \"Mine spans four — overlap is likely.\"}",
+  "[{\"instruction\": \"How do I find a botanical illustrator for a regional field guide?\", \"response\": \"Reach out to local botanists and welders/sculptors who sketch — overlapping communities often surface willing collaborators.\"}, {\"instruction\": \"What is the typical scope of a regional fern survey?\", \"response\": \"Usually three to four counties of overlapping coverage with herbarium records as the baseline.\"}, {\"instruction\": \"How do you coordinate fieldwork between a librarian and a university botanist?\", \"response\": \"Share herbarium photos and align county coverage before the summer survey window.\"}, {\"instruction\": \"What is one practical first step toward publishing a field guide?\", \"response\": \"Secure an illustrator early — even informally — so visual planning informs the outline.\"}]"
+]

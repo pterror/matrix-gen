@@ -14,6 +14,26 @@ Three layers, mirroring §3 of the paper:
 
 `matrix-gen` then composes those scenarios into instruction data via a downstream synthesis pass.
 
+## Quickstart
+
+```bash
+nix develop
+cargo run -p matrix-gen -- \
+  --profiles crates/matrix-gen/examples/profiles.json \
+  --backend mock-scripted \
+  --scripted crates/matrix-gen/examples/scripted.json \
+  --ticks 6 --pairs 4 --clusters 2 \
+  --output out.jsonl
+```
+
+Live mode (requires `ANTHROPIC_API_KEY`):
+
+```bash
+ANTHROPIC_API_KEY=... cargo run -p matrix-gen -- \
+  --profiles crates/matrix-gen/examples/profiles.json \
+  --backend live --output out.jsonl
+```
+
 ## Status
 
-Early scaffolding.
+Status: §3 architecture and MATRIX-Gen synthesis layer complete. CLI runs end-to-end against a mocked or live LLM backend.

@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "profile": {
+      "profession": "librarian",
+      "interests": ["bookbinding", "ferns"],
+      "bio": "Runs the local history archive.",
+      "historical_statements": ["Reshelved the entire 800s today."]
+    },
+    "goal": {
+      "description": "Publish a regional field guide to ferns.",
+      "plan": [
+        {"description": "Draft an outline", "completed": false},
+        {"description": "Collect specimens from three counties", "completed": false},
+        {"description": "Find an illustrator", "completed": false}
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "profile": {
+      "profession": "welder",
+      "interests": ["metallurgy", "sparks"],
+      "bio": "Twenty years building bridge components.",
+      "historical_statements": ["Wrapped a tricky stainless joint before lunch."]
+    },
+    "goal": {
+      "description": "Open a one-person sculpture studio.",
+      "plan": [
+        {"description": "Save tooling budget", "completed": false},
+        {"description": "Find a workshop space", "completed": false}
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "profile": {
+      "profession": "botanist",
+      "interests": ["ferns", "ethnobotany"],
+      "bio": "Adjunct at the state university.",
+      "historical_statements": ["Confirmed a new locality for Polystichum munitum."]
+    },
+    "goal": {
+      "description": "Document fern distribution across the region.",
+      "plan": [
+        {"description": "Compile herbarium records", "completed": false},
+        {"description": "Run summer field surveys", "completed": false}
+      ]
+    }
+  }
+]
